@@ -1,0 +1,27 @@
+{
+    "name": "Playwright Test Browser Dependencies",
+    "id": "playwright",
+    "version": "1.0.0",
+    "description": "Installs Playwright browsers' dependencies, and caches browsers in Docker volume.",
+    "keywords": ["playwright", "testing", "browser-testing"],
+    "options": {
+        "browsers": {
+            "type": "string",
+            "proposals": [
+                "chrome",
+                "chrome-beta",
+                "chromium",
+                "firefox",
+                "msedge",
+                "msedge-beta",
+                "msedge-dev",
+                "webkit"
+            ],
+            "default": "chromium",
+            "description": "List of browsers whose dependencies will be installed"
+        },
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/node"
+    ]
+}

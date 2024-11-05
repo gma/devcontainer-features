@@ -1,0 +1,20 @@
+{
+  "chromium_dependencies": {
+    "image": "debian:latest",
+    "features": {
+      "ghcr.io/devcontainers/features/node:1": {},
+      "playwright": {
+        "browsers": "chromium"
+      }
+    }
+  },
+  "firefox_dependencies": {
+    "image": "debian:latest",
+    "features": {
+      "ghcr.io/devcontainers/features/node:1": {},
+      "playwright": {
+        "browsers": "chromium"
+      }
+    }
+  }
+}
