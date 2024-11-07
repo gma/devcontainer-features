@@ -4,6 +4,14 @@
     "version": "1.0.0",
     "description": "Installs Playwright browsers' dependencies, and caches browsers in Docker volume.",
     "keywords": ["playwright", "testing", "browser-testing"],
+    "containerEnv": {
+        "PLAYWRIGHT_BROWSERS_PATH": "/playwright/browsers"
+    },
+    "mounts": [{
+        "source": "playwright-browsers",
+        "target": "/playwright/browsers",
+        "type": "volume"
+    }],
     "options": {
         "browsers": {
             "type": "string",

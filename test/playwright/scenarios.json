@@ -1,4 +1,11 @@
 {
+  "browser_volume": {
+    "image": "debian:latest",
+    "features": {
+      "ghcr.io/devcontainers/features/node:1": {},
+      "playwright": {}
+    }
+  },
   "chromium_dependencies": {
     "image": "debian:latest",
     "features": {
