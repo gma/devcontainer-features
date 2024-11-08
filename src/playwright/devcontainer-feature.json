@@ -7,11 +7,13 @@
     "containerEnv": {
         "PLAYWRIGHT_BROWSERS_PATH": "/playwright/browsers"
     },
-    "mounts": [{
-        "source": "playwright-browsers",
-        "target": "/playwright/browsers",
-        "type": "volume"
-    }],
+    "mounts": [
+        {
+            "source": "playwright-browsers",
+            "target": "/playwright/browsers",
+            "type": "volume"
+        }
+    ],
     "options": {
         "browsers": {
             "type": "string",
