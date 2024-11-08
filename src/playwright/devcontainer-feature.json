@@ -14,6 +14,7 @@
             "type": "volume"
         }
     ],
+    "postCreateCommand": "test ${USER} != root && sudo chown ${USER} /playwright/browsers || true",
     "options": {
         "browsers": {
             "type": "string",
