@@ -24,7 +24,7 @@ By default the dependencies for Chromium are installed. If you'd like to specify
 ```json
       ...
       "ghcr.io/gma/devcontainer-features/playwright:1": {
-          "browsers": "firefox chrome"
+          "browsers": "firefox chromium"
       },
       ...
 ```
