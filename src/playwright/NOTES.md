@@ -19,7 +19,7 @@ While your devcontainer is building this feature will:
 - Use Playwight to install any operating system dependencies required by the browers you want to use (i.e. it runs `npx playwright install-deps <browser>`)
 - Setup a named volume called `playwright-browsers` that Playwright will (later) use when you actually install some browsers
 
-By default the dependencies for Chromium are installed. If you'd like to specify different browsers you can so by setting the "browsers" option:
+By default the dependencies for Chromium are installed. If you'd like to specify different browsers you can do so by setting the "browsers" option:
 
 ```json
       ...
