@@ -21,7 +21,7 @@ Installs Playwright browsers' dependencies, and caches browsers in Docker volume
 
 This feature has been written to speed up the installation of [Playwright] within your devcontainers.
 
-Playwright is installed with `npm`, which means we need Node.js to be installed inside your devcontainer. You can achieve that by including the Node feature in your your `devcontainre.json` file, alongside this Playwright feature:
+Playwright is installed with `npm`, which means we need Node.js to be installed inside your devcontainer. You can achieve that by including the Node feature in your your `devcontainer.json` file, alongside this Playwright feature:
 
 ```json
   "features": {
