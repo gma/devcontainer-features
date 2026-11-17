@@ -17,7 +17,7 @@ The `devcontainer` command provides support for testing devcontainer features. T
 To run them locally, install the `devcontainer` command:
 
 ```sh
-npm install -g @devcontainer/cli
+npm install -g @devcontainers/cli
 ```
 
 Then run the tests:
