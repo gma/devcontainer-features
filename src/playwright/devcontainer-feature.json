@@ -29,7 +29,7 @@
             ],
             "default": "chromium",
             "description": "List of browsers whose dependencies will be installed"
-        },
+        }
     },
     "installsAfter": [
         "ghcr.io/devcontainers/features/node"
