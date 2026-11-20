@@ -21,7 +21,7 @@ Installs Playwright browsers' dependencies, and caches browsers in Docker volume
 
 This feature has been written to speed up the installation of [Playwright] within your devcontainers.
 
-Playwright is installed with `npm`, which means we need Node.js to be installed inside your devcontainer. You can achieve that by including the Node feature in your your `devcontainer.json` file, alongside this Playwright feature:
+Playwright is installed with `npm`, which means we need Node.js to be installed inside your devcontainer. You can achieve that by including the Node feature in your your `devcontainre.json` file, alongside this Playwright feature:
 
 ```json
   "features": {
@@ -38,12 +38,12 @@ While your devcontainer is building this feature will:
 - Use Playwight to install any operating system dependencies required by the browers you want to use (i.e. it runs `npx playwright install-deps <browser>`)
 - Setup a named volume called `playwright-browsers` that Playwright will (later) use when you actually install some browsers
 
-By default the dependencies for Chromium are installed. If you'd like to specify different browsers you can so by setting the "browsers" option:
+By default the dependencies for Chromium are installed. If you'd like to specify different browsers you can do so by setting the "browsers" option:
 
 ```json
       ...
       "ghcr.io/gma/devcontainer-features/playwright:1": {
-          "browsers": "firefox chrome"
+          "browsers": "firefox chromium"
       },
       ...
 ```
