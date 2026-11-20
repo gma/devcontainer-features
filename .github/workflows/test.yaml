@@ -15,7 +15,7 @@ jobs:
         features:
           - playwright
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli
@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli
